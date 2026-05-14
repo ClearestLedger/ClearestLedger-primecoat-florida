@@ -92,18 +92,19 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: clamp(180px, 18vw, 245px);
-  height: 68px;
+  width: clamp(190px, 18vw, 280px);
+  aspect-ratio: 1144 / 886;
+  filter: drop-shadow(0 12px 24px rgba(41, 80, 90, 0.12));
 }
 
 .brand-logo img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
 }
 
 .brand-positioning {
-  max-width: 180px;
+  max-width: 150px;
   padding-left: 14px;
   border-left: 1px solid rgba(79, 143, 149, 0.28);
   color: var(--deep-ocean);
@@ -190,6 +191,17 @@ img {
   max-width: 680px;
 }
 
+.hero-brand-logo {
+  width: min(620px, 92vw);
+  margin: 0 0 clamp(18px, 3vw, 32px) -2%;
+  filter: drop-shadow(0 24px 42px rgba(41, 80, 90, 0.1));
+}
+
+.hero-brand-logo img {
+  width: 100%;
+  height: auto;
+}
+
 .section-label {
   margin: 0 0 14px;
   color: var(--terracotta);
@@ -258,6 +270,9 @@ p {
   border-radius: 999px;
   font-weight: 800;
   line-height: 1.1;
+  overflow-wrap: anywhere;
+  text-align: center;
+  white-space: normal;
   transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
 }
 
@@ -1577,9 +1592,7 @@ p {
 .footer-logo {
   width: min(210px, 100%);
   margin: 0 0 14px;
-  border-radius: 18px;
-  background: rgba(255, 253, 248, 0.96);
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+  filter: drop-shadow(0 10px 18px rgba(255, 253, 248, 0.18));
 }
 
 .footer-disclaimer {
@@ -1726,7 +1739,7 @@ p {
 
   .site-nav {
     position: absolute;
-    top: 78px;
+    top: calc(100% + 10px);
     left: 18px;
     right: 18px;
     display: none;
@@ -1819,23 +1832,29 @@ p {
   }
 
   .brand-logo {
-    width: clamp(132px, 42vw, 170px);
-    height: 52px;
+    width: clamp(132px, 38vw, 172px);
+    height: auto;
   }
 
   .brand-logo img {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 
   .brand-positioning {
-    max-width: 116px;
+    max-width: 96px;
     padding-left: 10px;
-    font-size: 0.92rem;
+    font-size: 0.82rem;
   }
 
   .hero {
     padding: 54px 16px 70px;
+  }
+
+  .hero-brand-logo {
+    width: min(100%, 320px);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   h1 {
@@ -1850,6 +1869,13 @@ p {
   .hero-actions,
   .final-actions {
     width: 100%;
+  }
+
+  .button {
+    min-height: 50px;
+    padding: 13px 16px;
+    font-size: 0.94rem;
+    line-height: 1.2;
   }
 
   .hero-visual {
