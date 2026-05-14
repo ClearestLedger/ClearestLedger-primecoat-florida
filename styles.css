@@ -85,18 +85,27 @@ img {
 
 .brand {
   gap: 12px;
+  min-width: 232px;
 }
 
-.brand-mark {
-  display: grid;
-  place-items: center;
-  width: 48px;
-  height: 48px;
-  border: 1px solid rgba(79, 143, 149, 0.36);
-  border-radius: 50%;
-  color: var(--deep-ocean);
-  background: linear-gradient(135deg, var(--soft-warm-white), rgba(207, 232, 243, 0.82));
-  font-weight: 800;
+.brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 74px;
+  height: 54px;
+  overflow: hidden;
+  border: 1px solid rgba(41, 80, 90, 0.1);
+  border-radius: 16px;
+  background: rgba(255, 253, 248, 0.72);
+  box-shadow: 0 10px 24px rgba(41, 80, 90, 0.08);
+}
+
+.brand-logo img {
+  width: 104px;
+  max-width: none;
+  height: 104px;
+  object-fit: contain;
 }
 
 .brand-copy {
@@ -105,6 +114,7 @@ img {
 }
 
 .brand-copy strong {
+  color: var(--deep-ocean);
   font-size: 1rem;
 }
 
@@ -1566,17 +1576,19 @@ p {
   color: rgba(255, 253, 248, 0.74);
 }
 
-.site-footer strong {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 1.1rem;
-}
-
 .site-footer nav {
   display: flex;
   flex-wrap: wrap;
   gap: 12px 18px;
   align-content: start;
+}
+
+.footer-logo {
+  width: min(210px, 100%);
+  margin: 0 0 14px;
+  border-radius: 18px;
+  background: rgba(255, 253, 248, 0.96);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
 }
 
 .footer-disclaimer {
@@ -1810,9 +1822,19 @@ p {
     padding: 14px 16px;
   }
 
-  .brand-mark {
-    width: 42px;
-    height: 42px;
+  .brand {
+    min-width: 0;
+  }
+
+  .brand-logo {
+    width: 58px;
+    height: 44px;
+    border-radius: 14px;
+  }
+
+  .brand-logo img {
+    width: 88px;
+    height: 88px;
   }
 
   .brand-copy small {
