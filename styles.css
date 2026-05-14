@@ -177,8 +177,8 @@ img {
 }
 
 .hero-brand-logo {
-  width: min(100%, 620px);
-  margin: 0 0 clamp(18px, 3vw, 32px) -2%;
+  width: min(100%, 600px);
+  margin: clamp(-24px, -1.7vw, -12px) 0 clamp(40px, 5vw, 68px) -2%;
   filter: drop-shadow(0 24px 42px rgba(41, 80, 90, 0.1));
   position: relative;
   z-index: 2;
@@ -1819,8 +1819,9 @@ p {
   }
 
   .hero-brand-logo {
-    width: min(100%, 292px);
-    margin-top: 0;
+    width: min(100%, 312px);
+    margin-top: -6px;
+    margin-bottom: 38px;
     margin-left: auto;
     margin-right: auto;
   }
