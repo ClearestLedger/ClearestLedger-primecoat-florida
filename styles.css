@@ -164,9 +164,9 @@ img {
   display: grid;
   grid-template-columns: minmax(0, 0.88fr) minmax(420px, 1.12fr);
   gap: clamp(34px, 6vw, 82px);
-  align-items: center;
+  align-items: start;
   min-height: 100svh;
-  padding: clamp(138px, 13vw, 188px) clamp(18px, 5vw, 74px) clamp(76px, 9vw, 118px);
+  padding: clamp(86px, 8vw, 118px) clamp(18px, 5vw, 74px) clamp(76px, 9vw, 118px);
   background:
     linear-gradient(118deg, rgba(255, 253, 248, 0.78) 0%, rgba(207, 232, 243, 0.76) 54%, rgba(246, 239, 227, 0.8) 100%),
     linear-gradient(180deg, rgba(143, 199, 214, 0.4), transparent 70%);
@@ -177,9 +177,11 @@ img {
 }
 
 .hero-brand-logo {
-  width: min(620px, 92vw);
+  width: min(100%, 620px);
   margin: 0 0 clamp(18px, 3vw, 32px) -2%;
   filter: drop-shadow(0 24px 42px rgba(41, 80, 90, 0.1));
+  position: relative;
+  z-index: 2;
 }
 
 .hero-brand-logo img {
@@ -300,6 +302,7 @@ p {
 .hero-visual {
   position: relative;
   min-height: 640px;
+  margin-top: clamp(42px, 6vw, 86px);
 }
 
 .hero-visual::before {
@@ -1812,13 +1815,18 @@ p {
   }
 
   .hero {
-    padding: 92px 16px 70px;
+    padding: 76px 16px 70px;
   }
 
   .hero-brand-logo {
     width: min(100%, 292px);
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .hero-visual {
+    margin-top: 20px;
   }
 
   h1 {
