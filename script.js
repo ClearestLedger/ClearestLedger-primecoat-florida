@@ -36,7 +36,7 @@ const videoTitle = document.querySelector("[data-video-title]");
 const videoCopy = document.querySelector("[data-video-copy]");
 
 const galleryCaptions = {
-  coating: "Sherwin-Williams Loxon options reviewed for compatible masonry coating systems.",
+  coating: "Coating system options reviewed for compatible masonry and exterior surface conditions.",
   painting: "Premium exterior painting is positioned as a finish system, not a one-size-fits-all coating claim.",
   prep: "Preparation determines product compatibility before any coating recommendation is made.",
   wood: "Wood and trim details follow a separate finish path from stucco, concrete, and CMU/block.",
@@ -47,7 +47,7 @@ const videoContent = {
   coating: {
     label: "Coating Systems",
     title: "What Is a Premium Coating System?",
-    copy: "Use this video space to explain how a PrimeCoat consultation reviews surface condition, Sherwin-Williams product fit, preparation, and finish goals.",
+    copy: "Use this video space to explain how a PrimeCoat consultation reviews surface condition, product fit, preparation, and finish goals.",
   },
   prep: {
     label: "Preparation",
@@ -55,9 +55,9 @@ const videoContent = {
     copy: "Use this video space for inspection, cleaning, repairs, masking, caulking, primer or conditioner decisions, and final review.",
   },
   product: {
-    label: "SW Product Guide",
-    title: "Loxon Product Options",
-    copy: "Use this video space to introduce Loxon XP, Loxon XP IR, and Loxon Self-Cleaning with surface-specific and warranty-safe language.",
+    label: "Coating Guide",
+    title: "Coating System Options",
+    copy: "Use this video space to introduce coating selection, surface compatibility, manufacturer documentation, and warranty-safe language.",
   },
   financing: {
     label: "Investment",
@@ -71,10 +71,10 @@ const benefitContent = {
     label: "Florida Sun",
     title: "Sun & UV Exposure",
     copy:
-      "Florida homes live under intense daily sunlight. PrimeCoat reviews color direction, existing fading, surface soundness, and compatible Sherwin-Williams product options before recommending a finish path.",
+      "Florida homes live under intense daily sunlight. PrimeCoat reviews color direction, existing fading, surface soundness, and compatible product options before recommending a finish path.",
     points: [
       "Reviews current fading, chalking, and sun-exposed elevations.",
-      "Considers Loxon XP IR only where reflective coating technology fits the masonry surface and project goals.",
+      "Considers sun-aware finish options only where the technology fits the surface and project goals.",
       "Keeps comfort and energy language tied to product documentation rather than promises.",
     ],
   },
@@ -166,7 +166,7 @@ const processContent = {
     points: [
       "Review cracks, damaged stucco, failing caulk, loose coating, open joints, wood condition, and transitions between materials.",
       "Clarify what repairs are included in the scope and what may require a separate trade or additional review.",
-      "Use repair notes to support the final Sherwin-Williams product recommendation and warranty-safe scope language.",
+      "Use repair notes to support the final product recommendation and warranty-safe scope language.",
     ],
   },
   prepare: {
@@ -184,10 +184,10 @@ const processContent = {
     label: "Selected System",
     title: "Coat",
     copy:
-      "The coating step follows the written recommendation. PrimeCoat keeps the system tied to surface compatibility, selected Sherwin-Williams products, job conditions, and disciplined application.",
+      "The coating step follows the written recommendation. PrimeCoat keeps the system tied to surface compatibility, selected coating products, job conditions, and disciplined application.",
     points: [
       "Apply the selected coating or finish system according to the written scope and product specifications.",
-      "Review Loxon XP, Loxon XP IR, Loxon Self-Cleaning, or other Sherwin-Williams paths only where compatible with the surface and project goals.",
+      "Review product options only where compatible with the surface, preparation needs, and project goals.",
       "Focus on consistent coverage, clean transitions, careful detail work, and a refined exterior presentation.",
     ],
   },
@@ -384,17 +384,17 @@ assistant.addEventListener("click", (event) => {
 assistantSend.addEventListener("click", () => {
   const question = assistantInput.value.trim().toLowerCase();
   let answer =
-    "A PrimeCoat consultation can review your surface, preparation needs, Sherwin-Williams product fit, scope, and financing options. Share your city and project type in the form to start.";
+    "A PrimeCoat consultation can review your surface, preparation needs, product fit, scope, and financing options. Share your city and project type in the form to start.";
 
   if (question.includes("finance") || question.includes("payment")) {
     answer =
       "Financing options may be available for qualified homeowners. The best first step is a scope review so the financing conversation is tied to the actual project.";
-  } else if (question.includes("loxon") || question.includes("sherwin") || question.includes("sw")) {
+  } else if (question.includes("product") || question.includes("coating") || question.includes("system")) {
     answer =
-      "PrimeCoat reviews Sherwin-Williams Loxon options, including XP, XP IR, and Self-Cleaning, when they fit the surface condition, preparation needs, and product guidance.";
+      "PrimeCoat reviews approved coating options based on surface condition, preparation needs, exposure, project goals, and manufacturer guidance. The exact product line is confirmed in the written recommendation.";
   } else if (question.includes("stucco") || question.includes("block") || question.includes("concrete") || question.includes("brick")) {
     answer =
-      "Stucco, concrete, brick, masonry, and CMU/block may qualify depending on soundness, pH, existing coatings, repairs, and the selected Sherwin-Williams system.";
+      "Stucco, concrete, brick, masonry, and CMU/block may qualify depending on soundness, pH, existing coatings, repairs, and the selected coating system.";
   } else if (question.includes("wood") || question.includes("trim")) {
     answer =
       "Wood and trim details are reviewed separately from masonry because they may require different primers, stains, or exterior finish products.";
@@ -403,7 +403,7 @@ assistantSend.addEventListener("click", () => {
       "Warranty terms depend on the final product, surface condition, preparation, project scope, and manufacturer documentation. PrimeCoat keeps this in writing during consultation.";
   } else if (question.includes("video")) {
     answer =
-      "The video library has spaces for original PrimeCoat videos covering coating systems, preparation, Loxon options, and financing conversations.";
+      "The video library has spaces for original PrimeCoat videos covering coating systems, preparation, product selection, and financing conversations.";
   }
 
   showAssistantAnswer(answer);

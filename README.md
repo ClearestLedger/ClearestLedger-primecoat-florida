@@ -12,7 +12,7 @@ The local version references the project image at `assets/florida-home-exterior.
 
 ## Product Positioning Notes
 
-The public site now references Sherwin-Williams product planning around Loxon XP, Loxon XP IR, and Loxon Self-Cleaning. Keep claims tied to consultation, surface condition, preparation, manufacturer guidance, written scope, and warranty terms. Do not turn reflective, dirt-shedding, water-resistance, or warranty language into promised homeowner outcomes.
+The public site now uses product-neutral coating language until the final coating line is selected. Keep claims tied to consultation, surface condition, preparation, manufacturer guidance, written scope, and warranty terms. Do not turn reflective, dirt-shedding, moisture-resistance, or warranty language into promised homeowner outcomes.
 
 The expanded homepage includes a product education center, performance topics, a 10-step application planning section, original-video placeholders, cost education, FAQ content, and a guided consultation popup. Reference-site research should be used for structure and homeowner education patterns only; do not copy competitor photos, testimonials, proprietary claims, warranty promises, or company-specific content.
 

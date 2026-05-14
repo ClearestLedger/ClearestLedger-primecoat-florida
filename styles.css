@@ -468,18 +468,18 @@ p {
   background: rgba(207, 232, 243, 0.46);
 }
 
-.sw-strategy {
+.system-strategy {
   background:
     linear-gradient(180deg, var(--soft-warm-white), rgba(207, 232, 243, 0.34) 55%, var(--background-ivory));
 }
 
-.sw-grid {
+.system-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
 }
 
-.sw-grid article {
+.system-grid article {
   min-height: 280px;
   padding: 26px;
   border: 1px solid rgba(41, 80, 90, 0.11);
@@ -488,7 +488,7 @@ p {
   box-shadow: 0 12px 32px rgba(41, 80, 90, 0.07);
 }
 
-.sw-grid span,
+.system-grid span,
 .mini-label {
   display: inline-flex;
   margin-bottom: 16px;
@@ -1698,7 +1698,7 @@ p {
 
   .positioning-strip,
   .difference-grid,
-  .sw-grid,
+  .system-grid,
   .legal-summary-grid,
   .performance-grid,
   .process-map,
@@ -1751,7 +1751,7 @@ p {
 
   .positioning-strip,
   .difference-grid,
-  .sw-grid,
+  .system-grid,
   .learning-grid,
   .legal-summary-grid,
   .performance-grid,
