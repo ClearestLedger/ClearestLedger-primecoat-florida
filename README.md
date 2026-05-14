@@ -16,6 +16,12 @@ The public site now references Sherwin-Williams product planning around Loxon XP
 
 The expanded homepage includes a product education center, performance topics, a 10-step application planning section, original-video placeholders, cost education, FAQ content, and a guided consultation popup. Reference-site research should be used for structure and homeowner education patterns only; do not copy competitor photos, testimonials, proprietary claims, warranty promises, or company-specific content.
 
+## Legal Launch Items
+
+The site includes a Legal & Privacy Center, claim-safety notes, financing disclaimers, form consent language, warranty-safe language, product compatibility language, and accessibility notes.
+
+Before live advertising or regulated contracting work, confirm and add final business details such as Florida license number, business address, final financing provider language, final warranty documents, final privacy/contact process, and any permit or insurance disclosures required by counsel or the applicable licensing authority.
+
 ## Visual System
 
 The current visual direction uses a brighter premium coastal Florida palette: Bright Coastal White, Sunwashed Ivory, Coastal Sky Blue, Sea Glass Blue, Palm Teal, Deep Ocean Slate, Sand Beige, Coral Terracotta, Tropical Leaf Green, and Rich Text Charcoal. Keep future edits light, sunlit, coastal, and upscale residential; avoid muddy contractor grays, dark hero treatments, neon tropical colors, or generic navy-heavy layouts.
