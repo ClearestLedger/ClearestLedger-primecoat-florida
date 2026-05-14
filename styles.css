@@ -84,6 +84,7 @@ img {
 }
 
 .brand {
+  gap: 14px;
   flex: 0 0 auto;
 }
 
@@ -99,6 +100,18 @@ img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.brand-positioning {
+  max-width: 150px;
+  padding-left: 14px;
+  border-left: 1px solid rgba(79, 143, 149, 0.28);
+  color: var(--deep-ocean);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  line-height: 1.35;
+  text-transform: uppercase;
 }
 
 .site-nav {
@@ -1800,6 +1813,7 @@ p {
   }
 
   .brand {
+    gap: 10px;
     min-width: 0;
   }
 
@@ -1811,6 +1825,13 @@ p {
   .brand-logo img {
     width: 100%;
     height: 100%;
+  }
+
+  .brand-positioning {
+    max-width: 112px;
+    padding-left: 10px;
+    font-size: 0.56rem;
+    letter-spacing: 0.08em;
   }
 
   .hero {
