@@ -429,11 +429,6 @@ p {
   box-shadow: 0 24px 70px rgba(41, 80, 90, 0.14);
 }
 
-.premium-card span {
-  color: var(--palm-slate);
-  font-weight: 900;
-}
-
 .systems {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(360px, 0.8fr);
@@ -1586,6 +1581,20 @@ p {
 .footer-disclaimer {
   margin-bottom: 0;
   font-size: 0.9rem;
+}
+
+.footer-phone {
+  grid-column: 1 / -1;
+  margin: 8px 0 0;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 253, 248, 0.16);
+  color: rgba(255, 253, 248, 0.78);
+  font-weight: 800;
+  text-align: center;
+}
+
+.footer-phone a {
+  color: var(--soft-warm-white);
 }
 
 .footer-license {
